@@ -1,0 +1,163 @@
+*{
+margin:0;
+padding:0;
+}
+body{
+	background:#58141412;
+}
+
+/*utility class*/
+.para{
+	font-family: 'MuseoModerno', cursive;
+	font-weight:bold;
+}
+.heading{
+	font-family: 'MuseoModerno', cursive;
+}
+
+
+/*navigation bar*/
+#navigation{
+	top:0;
+	background:#e19d9d66;
+	height:29px;
+	width:100%;
+	position:fixed;
+}
+#navigation ul{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	list-style:none;	
+}
+
+#navigation ul a{
+	display:block;
+	padding:2px 8px;
+	border-radius:10px 10px 10px 10px;
+	text-decoration:none;
+	color:#ffffffb5;
+	font-size:18px;
+	font-weight: bold;
+}
+#navigation ul a:hover{
+	color:black;
+	background:#ffffffa3;
+}
+
+
+
+/*intro section*/
+#intro{
+	display:flex;
+	align-items:center;
+	flex-direction: row;
+	height:350px;
+	width:100%;
+	background:black;
+}
+#intro .name{
+	color:white;
+}
+#intro .name h1{
+	width:100%;
+	margin-left:23px;
+	margin-right: 108px;
+	padding:20px;
+	font-family: 'Piedra', cursive;
+	font-size:25px;
+}
+#intro .name-image{
+	width:100%;
+}
+#intro .name-image img{
+	height:100%;
+	width:100%;
+}
+
+
+/*about section*/
+#about{
+	margin:20px;
+}
+
+
+/*Gallery section*/
+#gallery{
+		margin:20px;
+}
+#gallery img{
+	padding:2px;
+	height:200px;
+	width:300px;	
+}
+
+
+/*Contact section*/
+#contact h1{
+	margin:20px;	
+}
+#contact #social{
+	height:340px;
+	width:100%;
+	position:relative;
+}
+#contact #social #background-image{
+	height:100%;
+	width:100%;
+	opacity:0.85;
+}
+.platforms{
+	height:50px;
+	width:50px;
+}
+#contact #social #platform-container{
+	position: absolute;
+  bottom: 35px;
+  right: 20px;
+}
+#contact #social #email-container{
+	position: absolute;
+  bottom: 12px;
+  right: 90px;
+}
+#contact #social #email-container h3{
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+@media only screen and (max-width: 600px){
+	
+
+	/*intro-section*/
+	#intro{
+		flex-wrap: wrap;
+		max-width: 100%;
+	}		
+	#intro .name h1{
+		width:auto;
+		padding:0;
+		margin-left: 50px;
+		margin-right: -200px;
+		padding-top: 40px;
+		padding-bottom:30px;
+		font-family: 'Piedra', cursive;
+		font-size:20px;
+
+	}
+	#intro .name-image img{
+		height:60%;
+		width:100%;
+	}
+
+	/*about-section*/
+	#about{
+		margin:45px 20px;
+	}
+	#gallery{
+		margin:45px 10px;
+}
+#contact{
+height:50%;	
+}
+}
